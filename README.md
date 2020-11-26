@@ -1,11 +1,11 @@
-###Initial teps:
+### Initial teps:
 - blade init -v 7.3 LPS-117485
 - cd LPS-117485
 - ./gradlew build 
 
 (all normal)
 
-###Add the dependency management plugin
+### Add the dependency management plugin
 
 Add to gradle.build:
 ```
