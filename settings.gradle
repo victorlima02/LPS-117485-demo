@@ -14,3 +14,9 @@ buildscript {
 apply plugin: "net.saliman.properties"
 
 apply plugin: "com.liferay.workspace"
+
+gradle.beforeProject { proj ->
+        if (proj.path == ":") {
+                proj.tasks.remove(proj.tasks["dependencyManagement"])
+        }
+}
